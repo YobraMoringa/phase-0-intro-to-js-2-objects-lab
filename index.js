@@ -5,8 +5,8 @@ const employee = {
 };
 
 function updateEmployeeWithKeyAndValue(employee, key, value) {
-    const copyOfEmployeeObj = { ...employee };
-    copyOfEmployeeObj[key] = value;
+    const copyOfEmployeeObj = { ...employee, [key]: value };
+    // copyOfEmployeeObj[key] = value;
     return copyOfEmployeeObj;
 }
 
